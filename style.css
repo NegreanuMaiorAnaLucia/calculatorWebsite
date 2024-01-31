@@ -1,21 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
+
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Cute Font', sans-serif;
     box-sizing: border-box;
+}
+
+.title{
+    align-self: flex-start;
+    justify-self: center;
+    font-size: 60px;
+    color:aliceblue;
 }
 
 .container{
     width: 100%;
     height: 100vh;
-    background: #e3f9ff;
+    background: #191a25;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .calculator {
-    background: #3a4452;
+    background: #000436;
     padding: 20px;
     border-radius: 10px;
 }
@@ -29,8 +38,8 @@
     box-shadow: -8px -8px -15px rgba(255, 255, 255, 0.1), 5px 5px 5px rgba(0, 0, 0, 0.2);
     background: transparent;
     font-size: 20px;
-    color: #fff;
-    cursor: pointer;
+    color: #0b0f7e;
+    cursor: crosshair;
     margin: 10px;
 }
 
@@ -38,6 +47,9 @@ form .display{
     display: flex;
     justify-content: flex-end;
     margin: 20px 0;
+    border: 3px solid black;
+    border-radius: 7px;
+    background-color: rgb(177, 186, 255);
 }
 
 form .display input{
@@ -52,5 +64,17 @@ form input.equal{
 }
 
 form input.operator {
-    color: cyan; 
+    color:rgb(225, 224, 255);
+    border: 3px solid black;
+    background-color:rgb(67, 64, 170); 
+    font-size: 40px;
+    font-weight: 700;
+}
+
+form input.number{
+    font-size: 40px;
+    font-weight: 700;
+    border: 3px solid black;
+    background-color: rgb(57, 57, 177);
+    color:rgb(209, 207, 255);
 }
